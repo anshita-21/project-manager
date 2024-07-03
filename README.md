@@ -1,4 +1,4 @@
-# MERN Stack Task Manager Application
+# MERN Stack Project Manager Application
 
 This is a Task Manager application built using the MERN (MongoDB, Express.js, React, Node.js) stack. It allows users to manage tasks, register, and login.
 
