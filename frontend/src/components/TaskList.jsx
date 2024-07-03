@@ -13,21 +13,19 @@ const TaskList = ({ tasks }) => {
 						<th>Title</th>
 						<th>Progress</th>
 						<th></th>
-						<th></th>
+						{/* <th></th> */}
 					</tr>
 				</thead>
 				<tbody>
 					{tasks.map((task) => (
 						<tr key={task._id}>
-							<td data-label="Title" style={{ fontWeight: "bold" }}>{task.title}</td>
-							<td data-label="Description">{task.description}</td>
-							<td>
-								<EditDialog task={task}/>
-							</td>
-							<td>
-								<DeleteAlertDialog id={task._id}/>
-							</td>
-						</tr>
+						<td data-label="Title" className="bold">{task.title}</td>
+						<td data-label="Description">{task.description}</td>
+						<td className="actions">
+							<EditDialog task={task}/>
+							<DeleteAlertDialog id={task._id}/>
+						</td>
+					</tr>
 					))}
 				</tbody>
 			</table>

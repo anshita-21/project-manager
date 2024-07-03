@@ -1,22 +1,45 @@
+/* General Table Styles */
 .table {
 	table-layout: fixed;
 	width: 100%;
+	border-collapse: collapse;
+	margin: 20px 0;
+	font-size: 1em;
+	min-width: 400px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
-table {
-	border-collapse: collapse;
-	width: 100%;
-}
 th,
 td {
+	padding: 12px 15px;
 	border: 1px solid #dddddd;
 	text-align: left;
-	padding: 8px;
-}
-th {
-	background-color: #f2f2f2;
 }
 
+th {
+	background-color: #03334b;
+	color: #ffffff;
+	text-align: left;
+}
+
+tr {
+	background-color: #f3f3f3;
+	border-bottom: 1px solid #dddddd;
+}
+
+tr:nth-of-type(even) {
+	background-color: #f8f8f8;
+}
+
+tr:last-of-type {
+	border-bottom: 2px solid #03334b;
+}
+
+tr:hover {
+	background-color: #f1f1f1;
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
 	.table thead {
 		display: none;
@@ -47,4 +70,16 @@ th {
 		font-weight: 600;
 		text-align: left;
 	}
+}
+
+.bold {
+	font-weight: bold;
+}
+
+/* Actions column styles */
+.actions {
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+	align-items: center;
 }
