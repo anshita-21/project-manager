@@ -54,7 +54,7 @@ export default function AddDialog() {
 			>
 				<ModalOverlay />
 				<ModalContent>
-					<ModalHeader>Create new Task</ModalHeader>
+					<ModalHeader>Create new Project</ModalHeader>
 					<ModalCloseButton />
 					<ModalBody pb={6}>
 						<FormControl>
@@ -68,7 +68,7 @@ export default function AddDialog() {
 						</FormControl>
 
 						<FormControl mt={4}>
-							<FormLabel>Description</FormLabel>
+							<FormLabel>Progress</FormLabel>
 							<Input
 								onChange={handleChange}
 								name="description"

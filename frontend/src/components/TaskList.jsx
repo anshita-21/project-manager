@@ -11,7 +11,7 @@ const TaskList = ({ tasks }) => {
 				<thead>
 					<tr>
 						<th>Title</th>
-						<th>Description</th>
+						<th>Progress</th>
 						<th></th>
 						<th></th>
 					</tr>

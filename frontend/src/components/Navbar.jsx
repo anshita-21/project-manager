@@ -9,7 +9,7 @@ const Navbar = () => {
 	return (
 		<div className="navbar">
 			<div className="navbar-left">
-				<span className="navbar-title">Task Management Application</span>
+				<span className="navbar-title">Project Manager Application</span>
 			</div>
 			<div className="navbar-right">
 				<AddDialog />

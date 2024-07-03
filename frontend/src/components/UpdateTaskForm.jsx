@@ -69,7 +69,7 @@ export default function EditDialog({ task }) {
 						</FormControl>
 
 						<FormControl mt={4}>
-							<FormLabel>Description</FormLabel>
+							<FormLabel>Progress</FormLabel>
 							<Input
 								onChange={handleChange}
 								name="description"

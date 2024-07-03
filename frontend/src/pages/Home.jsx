@@ -20,7 +20,7 @@ const Home = () => {
 				<Navbar />
 			</div>
 			<div className="heading">
-				<Heading>Task Management</Heading>
+				<Heading>Project Manager</Heading>
 			</div>
 			<div className="task_container" style={{ textAlign: "center" }}>
 				{tasks.length > 0 ? (
